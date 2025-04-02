@@ -1,0 +1,19 @@
+ {
+            int a, b, c, r, r1, r2;
+            Consol.WriteLine("date=")
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            c = int.Parse(Console.ReadLine());
+            r1 = (1404 - y - 1) * 365;
+            if (m <= 6)
+                r2 = 365 - ((m - 1) * 31 + d);
+            else
+                r2 = 365 - (186 + (m - 7) * 30 + d);
+            r = r1 + r2;
+            Console.WriteLine("r="+r);
+            a = r / 365;
+            b = (r % 365) / 30;
+            c = ((r % 365) % 30);
+            Console.WriteLine("y="+y+"m="+m+"d="+d);
+            Console.ReadLine();
+     }
