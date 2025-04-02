@@ -1,0 +1,13 @@
+ {
+            int a, b, c,s1,s2;
+            a = int.Parse(Console.ReadLine());
+            b = int.Parse(Console.ReadLine());
+            c = int.Parse(Console.ReadLine());
+            s1 = c - b;
+            s2 = b - a;
+            if (s1 == s2)
+                Console.WriteLine("yes");
+            else
+                Console.WriteLine("no");
+            Console.ReadLine();
+        }
